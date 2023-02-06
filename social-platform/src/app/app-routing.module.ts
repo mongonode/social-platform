@@ -1,13 +1,24 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HomePageComponent } from './Components/Home/home-page/home-page.component';
-
-
+import { PostsComponent } from './Components/Contents/posts/posts.component';
+import { VideosComponent } from './Components/Contents/videos/videos.component';
+import { BodyComponent } from './Components/Layout/body/body.component';
 
 const routes: Routes = [
   {
     path:'',
-    component:HomePageComponent
+    component:BodyComponent,
+    children: [
+      {
+        path:'',
+        component:PostsComponent
+      },
+
+      {
+        path:'videos',
+        component:VideosComponent
+      }
+    ]
   }
 ];
 
