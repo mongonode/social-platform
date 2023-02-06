@@ -1,3 +1,21 @@
-.nav-link i {
-    font-size: 20px;
+header {
+    box-shadow: 0px 3px 5px 0px #00000021;
 }
+
+.nav-link i, .Notifications {
+    font-size: 20px;
+    color: rgb(133, 133, 133);
+}
+
+.nav-link i:hover, .Notifications:hover {
+    color: rgb(0, 211, 18);
+}
+
+.Account {
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    background-image: url('../../../../assets/Profile/Sample-pic.jpeg');
+    background-size: cover;
+}
+
